@@ -1,0 +1,20 @@
+MECKMAN PRIVACY - SECURITY UPDATE PLAN
+========================================
+Date: 2026-02-22
+Overall Risk: LOW (static HTML page, no JS, no backend)
+
+MEDIUM
+------
+[ ] 1. Personal email (grease454@hotmail.com) still in git history even though removed from page — use git filter-repo or BFG to scrub
+[ ] 2. Personal Gmail (andrew.meckley1981@gmail.com) exposed as author in all git commits — switch to GitHub noreply address for future commits
+
+LOW
+---
+[ ] 3. Add .gitignore (missing entirely — risk of committing .env, .claude/, .DS_Store)
+[ ] 4. .claude/ directory on disk and syncing to iCloud — add to .gitignore
+[ ] 5. Add CSP meta tag to index.html (GitHub Pages doesn't support custom headers)
+
+INFO
+----
+[ ] 6. Inline CSS is standard for single-page static site — no action needed
+[ ] 7. Project on iCloud Drive — repo is already public so iCloud doesn't increase exposure
