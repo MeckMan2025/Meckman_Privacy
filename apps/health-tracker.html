@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Privacy Policy - Meckley Health Tracker</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="back" href="../index.html">All apps by Andrew Meckley</a>
+
+<h1>Privacy Policy</h1>
+<p class="eff">Meckley Health Tracker &middot; Effective July 26, 2026</p>
+
+<h2>What this application is</h2>
+<p>
+  Meckley Health Tracker is a private, single-user application built and operated by
+  Andrew Meckley for his own personal use. It combines his own WHOOP physiological data
+  with his own Lose It nutrition data into a daily summary report.
+</p>
+<p>
+  It is not a product, not a service, and is not offered to or usable by anyone else.
+  There are no other users, no accounts, and no sign-up. It runs locally on a personal
+  computer.
+</p>
+
+<h2>Whose data is processed</h2>
+<p>
+  Only the operator's own data. The application never accesses, requests, or receives
+  data belonging to any other person.
+</p>
+
+<h2>What data is accessed</h2>
+<table>
+  <tr><th>Source</th><th>Data</th><th>How</th></tr>
+  <tr>
+    <td>WHOOP</td>
+    <td>Sleep stages and performance, recovery score, heart rate variability, resting
+        heart rate, blood oxygen, skin temperature, day strain, calories burned,
+        workouts, and profile and body measurement fields (height, weight, maximum
+        heart rate)</td>
+    <td>WHOOP API v2 over HTTPS, authorized by the operator through OAuth 2.0 using the
+        read-only scopes <code>read:cycles</code>, <code>read:recovery</code>,
+        <code>read:sleep</code>, <code>read:workout</code>, <code>read:profile</code>,
+        and <code>read:body_measurement</code></td>
+  </tr>
+  <tr>
+    <td>Lose It</td>
+    <td>Daily calorie total and budget, per-meal and per-food entries, and nutrient
+        totals (fat, saturated fat, cholesterol, sodium, carbohydrates, fiber, sugars,
+        protein)</td>
+    <td>Read from the operator's own email inbox over IMAP, using summary report emails
+        that Lose It sends to him. Messages are read only and are never modified,
+        moved, or deleted</td>
+  </tr>
+  <tr>
+    <td>Entered directly</td>
+    <td>Body weight and, optionally, body composition readings</td>
+    <td>Typed in by the operator</td>
+  </tr>
+</table>
+
+<h2>Where data is stored</h2>
+<ul>
+  <li>All data is stored in a local database file on the operator's own computer.</li>
+  <li>No data is stored on any server operated by the developer, because there is no
+      such server.</li>
+  <li>The device uses full-disk encryption, which protects the stored data at rest.
+      Data is encrypted in transit by HTTPS and by IMAP over TLS.</li>
+  <li>Credentials are held in a separate local file readable only by the operator's own
+      user account, and are never written into logs or reports.</li>
+</ul>
+
+<h2>Who the data is shared with</h2>
+<p>
+  The data is not sold, rented, published, or shared with any third party for any
+  purpose. It is not used for advertising, profiling, or training any model. There is no
+  analytics or telemetry of any kind in this application.
+</p>
+<p>Data leaves the local machine only in these ways, all initiated by the operator:</p>
+<ul>
+  <li><strong>WHOOP</strong> receives authenticated API requests in order to return the
+      operator's own data.</li>
+  <li><strong>Google</strong> is contacted to read the operator's own Gmail mailbox over
+      IMAP.</li>
+  <li><strong>Anthropic</strong> receives the computed daily figures in order to generate
+      the written summary that accompanies the report.</li>
+  <li>The finished report is published to a private page visible only to the operator's
+      own authenticated account.</li>
+</ul>
+
+<h2>Retention and deletion</h2>
+<p>
+  Data is retained locally only as long as it is useful for personal trend analysis, and
+  the operator can delete the local database at any time, which removes everything the
+  application holds.
+</p>
+
+<h2>Revoking access</h2>
+<p>
+  WHOOP access can be revoked at any time from the WHOOP app or account settings, or
+  programmatically through WHOOP's de-authorization endpoint. Revoking access
+  immediately stops all further data retrieval. Email access is granted through a
+  revocable application-specific password that can be withdrawn at any time from the
+  Google account security page without affecting the account itself.
+</p>
+
+<h2>Children</h2>
+<p>This application is not directed at children and is used solely by its adult operator.</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the updated version will be posted at this address with a new
+  effective date.
+</p>
+
+<h2>Contact</h2>
+<p>Andrew Meckley &middot; <a href="mailto:andrew.meckley1981@gmail.com">andrew.meckley1981@gmail.com</a></p>
+
+<footer>
+  This policy covers Meckley Health Tracker only. The
+  <a href="../index.html">general policy</a> covers all applications by this developer.
+</footer>
+
+</body>
+</html>

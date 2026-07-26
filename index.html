@@ -1,129 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none';">
-    <title>Privacy Policy - Calc by Meckman</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #000000;
-            color: #FFFFFF;
-            line-height: 1.7;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 80px 24px 120px;
-        }
-
-        .panel {
-            background-color: #2A2A2A;
-            border: 1px solid rgba(255, 242, 204, 0.3);
-            border-radius: 12px;
-            padding: 48px 40px;
-        }
-
-        h1 {
-            font-size: 1.8em;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            margin-bottom: 8px;
-            text-align: center;
-        }
-
-        .heading-accent {
-            width: 60px;
-            height: 2px;
-            background-color: #CC0000;
-            margin: 0 auto 32px;
-        }
-
-        .app-name {
-            text-align: center;
-            color: #FFF2CC;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        .effective-date {
-            text-align: center;
-            color: #CCCCCC;
-            font-size: 0.9em;
-            margin-bottom: 48px;
-        }
-
-        h2 {
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #FFFFFF;
-            margin-bottom: 16px;
-            margin-top: 32px;
-        }
-
-        h2:first-of-type {
-            margin-top: 0;
-        }
-
-        p {
-            color: #CCCCCC;
-            margin-bottom: 24px;
-        }
-
-        ul {
-            color: #CCCCCC;
-            margin-bottom: 24px;
-            padding-left: 24px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Privacy Policy - Apps by Andrew Meckley</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="panel">
-            <h1>Privacy Policy</h1>
-            <div class="heading-accent"></div>
-            <p class="app-name">Calc by Meckman</p>
-            <p class="effective-date">Effective Date: January 19, 2026</p>
 
-            <h2>Overview</h2>
-            <p>Calc by Meckman is a calculator app designed with your privacy in mind. This app does not collect, store, transmit, or share any personal data or user information.</p>
+<h1>Privacy Policy</h1>
+<p class="eff">Applications by Andrew Meckley &middot; Effective July 26, 2026</p>
 
-            <h2>Data Collection</h2>
-            <p>This app collects no data. Specifically:</p>
-            <ul>
-                <li>No personal information is collected</li>
-                <li>No usage data or analytics are collected</li>
-                <li>No tracking or advertising identifiers are used</li>
-                <li>No cookies or similar technologies are used</li>
-                <li>No third-party SDKs or services are integrated</li>
-                <li>No network connections are made by the app</li>
-                <li>No account creation or login is required</li>
-            </ul>
+<p class="lede">
+  This policy covers every application I build and publish. Part One sets out commitments
+  that hold true across all of them. Part Two states, app by app, exactly what each one
+  accesses and why. Where an app needs its own policy page, one is linked from its entry.
+</p>
 
-            <h2>Data Storage</h2>
-            <p>All calculations are performed locally on your device. No data is stored, transmitted, or retained by the app or the developer.</p>
+<h2 id="part-one">Part One: commitments that apply to every app</h2>
 
-            <h2>Third Parties</h2>
-            <p>This app does not share any information with third parties because no information is collected.</p>
+<h3>Who I am</h3>
+<p>
+  I am an independent developer building small applications, mostly personal tools and
+  learning projects. There is no company behind them, no investors, and no business model
+  that depends on user data.
+</p>
 
-            <h2>Changes to This Policy</h2>
-            <p>If this privacy policy changes, the updated version will be posted here with a new effective date.</p>
+<h3>What I will never do</h3>
+<ul>
+  <li>I do not sell, rent, trade, or broker your data. Not to anyone, not ever, not in
+      aggregated or anonymized form.</li>
+  <li>I do not run advertising, do not integrate ad networks, and do not use advertising
+      identifiers.</li>
+  <li>I do not build profiles of you, and I do not combine data across my applications to
+      do so.</li>
+  <li>I do not use your data to train machine learning models.</li>
+  <li>I do not sell or transfer data as an asset. If an app is ever discontinued, its data
+      is deleted rather than passed on.</li>
+</ul>
 
-        </div>
-    </div>
+<h3>Collecting as little as possible</h3>
+<p>
+  Each app requests only what it needs to do its job. Where an app can work without
+  collecting something, it does not collect it. Several of my applications collect nothing
+  at all, and their entries below say so plainly.
+</p>
+
+<h3>Where data lives</h3>
+<p>
+  Many of my apps store data only on your own device and never transmit it. Where an app
+  does use a server or a third-party service, its entry in Part Two names that service and
+  says what is sent. Data in transit is protected with HTTPS or an equivalent encrypted
+  channel. Data stored on a device I control is protected by full-disk encryption.
+  Credentials and access tokens are kept out of logs and out of any report or export.
+</p>
+
+<h3>Third-party services</h3>
+<p>
+  When an app connects to an outside service, that service is named in the app's entry
+  below, along with what is shared and why. Those services have their own privacy policies
+  governing what they do with data, and I have no control over their practices. I do not
+  hand your data to any third party beyond what an app's stated function requires.
+</p>
+
+<h3>Analytics</h3>
+<p>
+  I do not use cross-app or cross-site tracking. If an individual app uses any analytics
+  or error reporting, that fact is disclosed in that app's entry below. If an app's entry
+  does not mention analytics, the app does not use any.
+</p>
+
+<h3>Retention and deletion</h3>
+<p>
+  Data is kept only as long as it serves the app's stated purpose. For apps that store
+  data on your own device, deleting the app removes the data. For anything held elsewhere,
+  you can ask me to delete it using the contact address below, and I will do so.
+</p>
+
+<h3>Your choices</h3>
+<ul>
+  <li>You can ask what data an app holds about you, and I will tell you.</li>
+  <li>You can ask for it to be deleted.</li>
+  <li>Where an app connects to an outside account, you can revoke that connection from the
+      service itself at any time, which immediately stops further access.</li>
+</ul>
+
+<h3>Children</h3>
+<p>
+  My applications are not directed at children under 13, and I do not knowingly collect
+  personal information from them. Some of my projects are educational tools that may be
+  used in a school setting; where an app is intended for classroom use, its entry below
+  states what it collects, and any such app is designed to collect nothing personally
+  identifying. If you believe a child has provided personal information through one of my
+  apps, contact me and I will delete it.
+</p>
+
+<h3>Changes to this policy</h3>
+<p>
+  If this policy changes, the updated version is posted at this address with a new
+  effective date. Material changes to a specific app are reflected in that app's entry.
+</p>
+
+<h3>Contact</h3>
+<p>
+  Andrew Meckley &middot;
+  <a href="mailto:andrew.meckley1981@gmail.com">andrew.meckley1981@gmail.com</a>
+</p>
+
+<h2 id="part-two">Part Two: what each app accesses</h2>
+<p>
+  Every commitment in Part One applies to each app listed here. This section adds the
+  specifics.
+</p>
+
+<ul class="applist">
+  <li>
+    <span class="name"><a href="apps/calc.html">Calc by Meckman</a></span>
+    <span class="what">Calculator, iOS. Collects nothing.</span>
+  </li>
+  <li>
+    <span class="name"><a href="apps/health-tracker.html">Meckley Health Tracker</a></span>
+    <span class="what">Private single-user health report. Reads the operator's own WHOOP
+      and nutrition data. Not offered to anyone else.</span>
+  </li>
+</ul>
+
+<h3 id="calc">Calc by Meckman</h3>
+<p><span class="chip">iOS</span> <span class="chip">Collects no data</span></p>
+<p>
+  Calc by Meckman is a calculator. It collects no data of any kind: no personal
+  information, no usage data, no analytics, no tracking or advertising identifiers, no
+  cookies. It integrates no third-party services and makes no network connections. All
+  calculations happen on your device, and nothing is stored or transmitted. Because
+  nothing is collected, there is nothing to share, sell, or delete.
+</p>
+<p><a href="apps/calc.html">Full policy for Calc by Meckman</a></p>
+
+<h3 id="health-tracker">Meckley Health Tracker</h3>
+<p><span class="chip">Private, single user</span> <span class="chip">Runs locally</span></p>
+<p>
+  A personal tool that combines my own WHOOP physiological data with my own nutrition data
+  into a daily report. It is not a product and is not offered to or usable by anyone else:
+  there are no other users, no accounts, and no sign-up. It reads only my own data, stores
+  it in a local encrypted-at-rest database on my own computer, and never sells, publishes,
+  or shares it. It connects to WHOOP to retrieve my own records, to my own email inbox in
+  read-only fashion, and to Anthropic to generate the written summary.
+</p>
+<p><a href="apps/health-tracker.html">Full policy for Meckley Health Tracker</a></p>
+
+<div class="note">
+  <p>
+    Apps not listed above collect no personal data. If you are looking for an app that is
+    not here and want confirmation, email me and I will add its entry.
+  </p>
+</div>
+
+<footer>
+  Last updated July 26, 2026 &middot;
+  <a href="mailto:andrew.meckley1981@gmail.com">andrew.meckley1981@gmail.com</a>
+</footer>
+
 </body>
 </html>
