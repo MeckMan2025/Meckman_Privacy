@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<!-- No connect-src at all: this page is incapable of sending anything anywhere. -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Authorization complete</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Authorization complete</h1>
+<p class="eff">Copy the code below and paste it back into your terminal.</p>
+
+<div id="result">
+  <p class="lede">Reading the authorization code from the address bar...</p>
+</div>
+
+<h2>Is this safe?</h2>
+<p>
+  Yes. This page contains no network code of any kind: its content security policy has no
+  <code>connect-src</code>, so the browser will not permit it to transmit anything, to
+  anyone, under any circumstances. The authorization code is read from your own address
+  bar and displayed to you. It never leaves your browser.
+</p>
+<p>
+  The code is also single use and expires within minutes, and it cannot be exchanged for
+  anything without the client secret, which stays on your own computer.
+</p>
+
+<h2>What to do</h2>
+<ol>
+  <li>Copy the code above.</li>
+  <li>Return to your terminal, where <code>./health auth-whoop --manual</code> is waiting.</li>
+  <li>Paste it and press return.</li>
+</ol>
+<p>
+  If you would rather not copy by hand, paste the entire URL from your address bar
+  instead. The tool accepts either.
+</p>
+
+<footer>
+  A helper page for OAuth redirects &middot;
+  <a href="../index.html">Privacy policy</a>
+</footer>
+
+<script src="callback.js"></script>
+</body>
+</html>

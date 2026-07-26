@@ -75,3 +75,19 @@ footer {
   color: var(--ink-soft); font-size: .88rem;
 }
 a.back { display: inline-block; margin-bottom: 1.2rem; font-size: .9rem; }
+
+/* OAuth callback helper page */
+#code {
+  background: var(--chip); border: 1px solid var(--rule-strong); border-radius: 8px;
+  padding: .9rem 1rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1rem; word-break: break-all; white-space: pre-wrap; margin: .5rem 0 .8rem;
+  user-select: all;
+}
+#result button {
+  font: inherit; font-size: .92rem; padding: .45rem 1rem; border-radius: 8px;
+  border: 1px solid var(--rule-strong); background: var(--chip); color: var(--ink);
+  cursor: pointer;
+}
+#result button:hover { border-color: var(--accent); }
+#result button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.statenote { color: var(--ink-soft); font-size: .82rem; margin-top: .8rem; word-break: break-all; }
